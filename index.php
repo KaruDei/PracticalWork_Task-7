@@ -76,7 +76,7 @@
 		*	Я не понимаю почему после выполнения DeletePlane() перестаёт работать AirportPlanes().
 		*	Что я сделал не так?
 		*/
-		public function DeletePlane(Planes $plane) {
+		public function DeletePlane($plane) {
 			$array = array_search($plane, $this->planes);
 			if ($array !== false) {
 				$plane->airUp();
